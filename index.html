@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huanghuali Conservation | Chinese Furniture Conservators London</title>
+    <meta name="description" content="Specialist conservation of huanghuali, zitan, lacquer and Chinese hardwood objets d'art. London-based conservators serving collectors, institutions and the trade.">
+    <style>
+        :root {
+            --black: #111111;
+            --white: #ffffff;
+            --paper: #f7f7f7;
+            --mist: #ededed;
+            --line: rgba(17, 17, 17, 0.12);
+            --text: #1a1a1a;
+            --muted: #565656;
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            --shadow-strong: 0 35px 90px rgba(0, 0, 0, 0.15);
+            --radius: 28px;
+            --max: 1380px;
+            --font: 'Optima', 'URW Classico', 'Segoe UI', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .page-shell {
+            overflow: hidden;
+        }
+
+        .container {
+            width: min(calc(100% - 40px), var(--max));
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .section {
+            padding: 110px 0;
+        }
+
+        .section-title {
+            font-size: clamp(34px, 5vw, 72px);
+            font-weight: 400;
+            line-height: 1.02;
+            letter-spacing: -0.03em;
+        }
+
+        .section-copy {
+            max-width: 680px;
+            font-size: 19px;
+            color: var(--muted);
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(14px);
+            background: rgba(255, 255, 255, 0.86);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .nav-inner {
+            width: min(calc(100% - 40px), var(--max));
+            margin: 0 auto;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .brand strong {
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.02em;
+        }
+
+        .brand span {
+            font-size: 11px;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+        }
+
+        .nav-links a:hover,
+        .nav-cta:hover,
+        .button:hover {
+            opacity: 0.72;
+        }
+
+        .nav-cta,
+        .button {
+            transition: opacity 0.2s ease;
+        }
+
+        .nav-cta {
+            padding: 12px 18px;
+            border-radius: 999px;
+            border: 1px solid var(--black);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+        }
+
+        .hero {
+            padding: 48px 0 100px;
+            background:
+                radial-gradient(circle at top left, rgba(0,0,0,0.04), transparent 34%),
+                linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr);
+            gap: 56px;
+            align-items: center;
+        }
+
+        .hero-copy {
+            padding: 40px 0;
+        }
+
+        .hero h1 {
+            font-size: clamp(56px, 8vw, 116px);
+            font-weight: 400;
+            line-height: 0.9;
+            letter-spacing: -0.06em;
+            margin-bottom: 26px;
+            max-width: 8ch;
+        }
+
+        .hero .lede {
+            max-width: 620px;
+            font-size: 23px;
+            line-height: 1.45;
+            color: var(--muted);
+            margin-bottom: 34px;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .hero-meta span {
+            border: 1px solid var(--line);
+            background: rgba(255,255,255,0.8);
+            padding: 10px 14px;
+            border-radius: 999px;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .button-row {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 0 24px;
+            border-radius: 999px;
+            font-size: 13px;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            border: 1px solid var(--black);
+        }
+
+        .button.primary {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .button.ghost {
+            background: transparent;
+        }
+
+        .hero-visual {
+            position: relative;
+            min-height: 760px;
+        }
+
+        .hero-card {
+            position: absolute;
+            overflow: hidden;
+            border-radius: var(--radius);
+            background: var(--white);
+            box-shadow: var(--shadow-strong);
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+
+        .hero-card img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-card.large {
+            inset: 70px 0 90px 90px;
+        }
+
+        .hero-card.small-top {
+            width: 240px;
+            height: 320px;
+            top: 0;
+            left: 0;
+            transform: rotate(-5deg);
+        }
+
+        .hero-card.small-bottom {
+            width: 250px;
+            height: 300px;
+            right: 10px;
+            bottom: 0;
+            transform: rotate(6deg);
+        }
+
+        .floating-note {
+            position: absolute;
+            left: 42px;
+            bottom: 48px;
+            max-width: 300px;
+            background: rgba(255,255,255,0.92);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow);
+            border-radius: 22px;
+            padding: 20px 22px;
+        }
+
+        .floating-note strong {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .floating-note p {
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .intro-layout {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            align-items: end;
+            margin-bottom: 46px;
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .pillar {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 26px;
+            padding: 32px;
+            min-height: 250px;
+        }
+
+        .pillar span {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .pillar h3 {
+            font-size: 28px;
+            line-height: 1.1;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .pillar p {
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .showcase {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .showcase .section-copy,
+        .showcase .eyebrow,
+        .showcase .project-card p,
+        .showcase .project-card span,
+        .showcase .quote p,
+        .showcase .quote cite {
+            color: rgba(255,255,255,0.72);
+        }
+
+        .showcase-grid {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 22px;
+            align-items: start;
+        }
+
+        .project-card,
+        .image-frame,
+        .gallery-card,
+        .painting-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 28px;
+            overflow: hidden;
+        }
+
+        .project-card img,
+        .image-frame img,
+        .gallery-card img,
+        .painting-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-card .copy {
+            padding: 24px 26px 28px;
+        }
+
+        .project-card span {
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 11px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .project-card h3 {
+            font-size: clamp(24px, 3vw, 42px);
+            font-weight: 400;
+            line-height: 1.04;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .stack {
+            display: grid;
+            gap: 22px;
+        }
+
+        .quote {
+            padding: 32px;
+            border-radius: 28px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.12);
+        }
+
+        .quote p {
+            font-size: 28px;
+            line-height: 1.2;
+            color: var(--white);
+        }
+
+        .quote cite {
+            display: block;
+            margin-top: 20px;
+            font-style: normal;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            font-size: 11px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 0.95fr 1.05fr;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .services-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .service-item {
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            gap: 18px;
+            padding: 24px;
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+            box-shadow: var(--shadow);
+        }
+
+        .service-item .num {
+            font-size: 11px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--muted);
+            padding-top: 5px;
+        }
+
+        .service-item h3 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 6px;
+        }
+
+        .service-item p {
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .study-grid {
+            display: grid;
+            grid-template-columns: 0.82fr 1.18fr;
+            gap: 28px;
+            align-items: start;
+        }
+
+        .painting-card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            padding: 18px;
+        }
+
+        .painting-card figure {
+            display: grid;
+            gap: 16px;
+        }
+
+        .painting-card img {
+            object-fit: contain;
+            background: #fafafa;
+            border-radius: 18px;
+            max-height: 760px;
+        }
+
+        .painting-card figcaption,
+        .caption {
+            font-size: 13px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .detail-layout {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 34px;
+        }
+
+        .image-frame {
+            background: var(--white);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow);
+        }
+
+        .image-frame figure {
+            display: grid;
+            gap: 16px;
+        }
+
+        .image-frame img {
+            aspect-ratio: 1 / 1.1;
+        }
+
+        .image-frame figcaption {
+            padding: 0 20px 20px;
+        }
+
+        .masonry {
+            columns: 3 280px;
+            column-gap: 18px;
+            margin-top: 34px;
+        }
+
+        .gallery-card {
+            break-inside: avoid;
+            margin-bottom: 18px;
+            background: var(--paper);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow);
+        }
+
+        .gallery-card img {
+            height: auto;
+        }
+
+        .gallery-card .caption {
+            padding: 14px 16px 18px;
+        }
+
+        .cta-panel {
+            background: linear-gradient(180deg, #1a1a1a 0%, #070707 100%);
+            color: var(--white);
+            border-radius: 36px;
+            padding: clamp(34px, 5vw, 64px);
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 32px;
+            align-items: end;
+        }
+
+        .cta-panel p,
+        .footer-meta {
+            color: rgba(255,255,255,0.7);
+        }
+
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 30px 0 50px;
+        }
+
+        .footer-grid {
+            width: min(calc(100% - 40px), var(--max));
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 24px;
+            align-items: end;
+        }
+
+        .footer-grid strong {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .footer-meta {
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            text-align: right;
+        }
+
+        @media (max-width: 1100px) {
+            .hero-grid,
+            .intro-layout,
+            .showcase-grid,
+            .services-grid,
+            .study-grid,
+            .cta-panel,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-visual {
+                min-height: 640px;
+                order: -1;
+            }
+
+            .hero-card.large {
+                inset: 90px 0 90px 70px;
+            }
+
+            .pillars,
+            .detail-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-meta {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 820px) {
+            nav {
+                position: static;
+            }
+
+            .nav-inner {
+                min-height: auto;
+                padding: 18px 0;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 14px;
+            }
+
+            .hero {
+                padding-top: 28px;
+            }
+
+            .hero h1 {
+                max-width: none;
+            }
+
+            .hero .lede {
+                font-size: 19px;
+            }
+
+            .hero-visual {
+                min-height: 500px;
+            }
+
+            .hero-card.small-top {
+                width: 150px;
+                height: 200px;
+            }
+
+            .hero-card.small-bottom {
+                width: 170px;
+                height: 210px;
+            }
+
+            .hero-card.large {
+                inset: 50px 0 80px 30px;
+            }
+
+            .floating-note {
+                left: 16px;
+                right: 16px;
+                bottom: 16px;
+                max-width: none;
+            }
+
+            .section {
+                padding: 80px 0;
+            }
+
+            .service-item {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .masonry {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <nav>
+            <div class="nav-inner">
+                <a href="#top" class="brand">
+                    <strong>Huanghuali Conservation</strong>
+                    <span>London atelier, by appointment</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#practice">Practice</a></li>
+                    <li><a href="#works">Selected Works</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#study">Study Room</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a class="nav-cta" href="mailto:conservation@huanghualiconservation.com">Private Consultation</a>
+            </div>
+        </nav>
+
+        <header class="hero" id="top">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Chinese furniture conservation</span>
+                    <h1>The art of Chinese furniture conservation</h1>
+                    <p class="lede">A consortium of master conservators dedicated to the preservation of China’s most precious hardwood objet d’art, approached with scholarly rigour, invisible intervention, and a collector’s eye for proportion, surface, and provenance.</p>
+                    <div class="hero-meta">
+                        <span>Huanghuali</span>
+                        <span>Zitan</span>
+                        <span>Lacquer</span>
+                        <span>Paktong fittings</span>
+                    </div>
+                    <div class="button-row">
+                        <a class="button primary" href="mailto:conservation@huanghualiconservation.com">Request a consultation</a>
+                        <a class="button ghost" href="#works">Explore selected works</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-card small-top">
+                        <img src="images/chair-with-screen.jpg" alt="">
+                    </div>
+                    <div class="hero-card large">
+                        <img src="images/quilted-figure-cabinet.jpg" alt="">
+                    </div>
+                    <div class="hero-card small-bottom">
+                        <img src="images/paktong-lock-detail.jpg" alt="">
+                    </div>
+                    <div class="floating-note">
+                        <strong>Private atelier</strong>
+                        <p>We advise collectors, institutions, and the trade from London, combining traditional workshop practice with close connoisseurship.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section" id="practice">
+            <div class="container">
+                <div class="intro-layout">
+                    <div>
+                        <span class="eyebrow">Our practice</span>
+                        <h2 class="section-title">An editorial, object-led approach to conservation.</h2>
+                    </div>
+                    <p class="section-copy">Founded by specialists shaped by the Christopher Cooke lineage, the practice brings together expertise in structural repair, surface preservation, authentication, and provenance research. We treat each object not as inventory but as a work with biography, presence, and consequence.</p>
+                </div>
+                <div class="pillars">
+                    <article class="pillar">
+                        <span>01</span>
+                        <h3>Conservation</h3>
+                        <p>Stabilisation, structural repair, and surface work carried out with restraint, legibility, and fidelity to original material and intent.</p>
+                    </article>
+                    <article class="pillar">
+                        <span>02</span>
+                        <h3>Authentication</h3>
+                        <p>Close analysis of timber, construction, mounts, and wear patterns, informed by decades of handling exceptional works.</p>
+                    </article>
+                    <article class="pillar">
+                        <span>03</span>
+                        <h3>Provenance research</h3>
+                        <p>Contextual research, collection histories, and object documentation that support scholarship, valuation, and confidence.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section showcase" id="works">
+            <div class="container">
+                <span class="eyebrow">Selected works</span>
+                <h2 class="section-title">Furniture with presence, surface, and memory.</h2>
+                <p class="section-copy">Rather than crowding the page with catalogue noise, the site lingers on a few persuasive views: overall form, interior architecture, and the tactile evidence of age and handling.</p>
+
+                <div class="showcase-grid">
+                    <article class="project-card">
+                        <img src="images/medicine-cabinet-open.jpg" alt="Open huanghuali medicine cabinet with small drawers and brass hardware.">
+                        <div class="copy">
+                            <span>Featured object</span>
+                            <h3>Medicine cabinet with original internal order.</h3>
+                            <p>Opened fully, the cabinet reveals the discipline of its interior architecture, the quiet rhythm of drawers, and the restrained dignity of its mounts.</p>
+                        </div>
+                    </article>
+                    <div class="stack">
+                        <article class="project-card">
+                            <img src="images/tall-cabinet-grain.jpg" alt="Tall huanghuali cabinet with beautifully figured continuous grain doors.">
+                            <div class="copy">
+                                <span>Continuous grain</span>
+                                <h3>Read as sculpture before furniture.</h3>
+                                <p>The uninterrupted sweep of grain becomes the composition itself, with hardware held in deliberate reserve.</p>
+                            </div>
+                        </article>
+                        <blockquote class="quote">
+                            <p>“The finest conservation leaves no trace, but it restores the object’s authority.”</p>
+                            <cite>Atelier principle</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="services" style="background: linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%); border-top: 1px solid rgba(17,17,17,0.08); border-bottom: 1px solid rgba(17,17,17,0.08);">
+            <div class="container services-grid">
+                <div>
+                    <span class="eyebrow">Services</span>
+                    <h2 class="section-title">Invisible intervention, visible confidence.</h2>
+                </div>
+                <div class="services-list">
+                    <article class="service-item">
+                        <div class="num">01</div>
+                        <div>
+                            <h3>Conservation and restoration</h3>
+                            <p>Joinery, structural repair, sympathetic replacement, surface stabilisation, and conservation-led finishing for hardwood furniture and related works.</p>
+                        </div>
+                    </article>
+                    <article class="service-item">
+                        <div class="num">02</div>
+                        <div>
+                            <h3>Condition assessment</h3>
+                            <p>Detailed reporting for collectors, institutions, auction houses, and dealers, with attention to old repairs, movement, finish, and mount integrity.</p>
+                        </div>
+                    </article>
+                    <article class="service-item">
+                        <div class="num">03</div>
+                        <div>
+                            <h3>Authentication and dating</h3>
+                            <p>Comparative object analysis drawing on timber character, hardware, patina, wear, and construction logic across Ming and Qing precedents.</p>
+                        </div>
+                    </article>
+                    <article class="service-item">
+                        <div class="num">04</div>
+                        <div>
+                            <h3>Collection management</h3>
+                            <p>Advice on handling, display, environmental risk, and documentation for private collections and institutional holdings.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="study">
+            <div class="container study-grid">
+                <aside class="painting-card">
+                    <figure>
+                        <img src="images/bird-ink-painting.jpg" alt="Chinese ink painting of a bird on winter branches with calligraphy and seals.">
+                        <figcaption>Study room reference, used here to widen the visual world beyond furniture alone.</figcaption>
+                    </figure>
+                </aside>
+                <div>
+                    <span class="eyebrow">Study room</span>
+                    <h2 class="section-title">Context matters as much as craft.</h2>
+                    <p class="section-copy">The strongest websites in this field do not feel like a repair shop brochure. They feel like a room full of objects, scholarship, and judgement. This draft leans into that mood, pairing cabinetry with details, hardware, and a lyrical painted interlude so the whole site breathes a little more like a connoisseur’s interior.</p>
+                    <div class="detail-layout">
+                        <article class="image-frame">
+                            <figure>
+                                <img src="images/chair-splat-detail-1.jpg" alt="Carved chair splat detail with elegant ruyi motif.">
+                                <figcaption class="caption">Carved splat detail</figcaption>
+                            </figure>
+                        </article>
+                        <article class="image-frame">
+                            <figure>
+                                <img src="images/cabinet-joinery-detail-1.jpg" alt="Joinery detail showing cabinet leg and apron with soft wear.">
+                                <figcaption class="caption">Joinery and wear</figcaption>
+                            </figure>
+                        </article>
+                        <article class="image-frame">
+                            <figure>
+                                <img src="images/portable-cabinet.jpg" alt="Portable huanghuali cabinet with carrying handle and brass mounts.">
+                                <figcaption class="caption">Portable cabinet with paktong mounts</figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <span class="eyebrow">Object gallery</span>
+                <h2 class="section-title">Scattered, but with intent.</h2>
+                <p class="section-copy">A loose salon-style arrangement lets the page feel discovered rather than merely scrolled, while still keeping every image legible and purposeful.</p>
+                <div class="masonry">
+                    <article class="gallery-card">
+                        <img src="images/cabinet-interior-open.jpg" alt="Open cabinet showing lacquered interior panels and drawers.">
+                        <div class="caption">Interior architecture</div>
+                    </article>
+                    <article class="gallery-card">
+                        <img src="images/chair-splat-detail-2.jpg" alt="Second carved chair splat detail with huanghuali grain.">
+                        <div class="caption">Curves and carving</div>
+                    </article>
+                    <article class="gallery-card">
+                        <img src="images/cabinet-joinery-detail-2.jpg" alt="Cabinet leg and apron detail showing age and handling.">
+                        <div class="caption">Leg and apron detail</div>
+                    </article>
+                    <article class="gallery-card">
+                        <img src="images/cabinet-joinery-detail-3.jpg" alt="Close view of cabinet frame connection and joinery.">
+                        <div class="caption">Frame connection</div>
+                    </article>
+                    <article class="gallery-card">
+                        <img src="images/paktong-lock-detail.jpg" alt="Paktong lock and escutcheon detail on huanghuali cabinet doors.">
+                        <div class="caption">Paktong lock plate</div>
+                    </article>
+                    <article class="gallery-card">
+                        <img src="images/chair-with-screen.jpg" alt="Huanghuali chair against an ornate gilt screen.">
+                        <div class="caption">Chair against painted screen</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="cta-panel">
+                    <div>
+                        <span class="eyebrow">By appointment</span>
+                        <h2 class="section-title">Collectors, institutions, and the trade.</h2>
+                    </div>
+                    <div>
+                        <p>We work privately from London on conservation, assessment, and advisory matters concerning Chinese hardwood furniture and related works of art.</p>
+                        <div class="button-row" style="margin-top: 26px;">
+                            <a class="button primary" href="mailto:conservation@huanghualiconservation.com">conservation@huanghualiconservation.com</a>
+                            <a class="button ghost" href="mailto:conservation@huanghualiconservation.com?subject=Private%20Consultation">Start a conversation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-grid">
+                <div>
+                    <strong>Huanghuali Conservation</strong>
+                    <div>7A Sulina Road, London SW2 4EJ</div>
+                    <div>By private appointment only</div>
+                </div>
+                <div class="footer-meta">Specialist conservation of Chinese furniture, lacquer, mounts, and provenance</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
