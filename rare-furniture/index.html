@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Furniture | Antique Restoration Brixton Hill London</title>
+    <meta name="description" content="Antique furniture restoration & architectural woodwork conservation in Brixton Hill, London. Grade II listed staircases, panelled rooms, Georgian shutters. Est. 2010.">
+    <meta name="keywords" content="antique furniture restoration Brixton, furniture repair London, architectural woodwork conservation, Grade II listed staircase restoration, panelled rooms, Georgian shutters, Brixton Hill, SW2">
+    <meta name="author" content="Rare Furniture">
+    <meta property="og:title" content="Rare Furniture | Antique Restoration Brixton Hill">
+    <meta property="og:description" content="Antique furniture restoration & architectural woodwork conservation. Grade II listed staircases, panelled rooms, Georgian shutters.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://huanghualiconservation.com/rare-furniture/">
+    <link rel="canonical" href="https://huanghualiconservation.com/rare-furniture/">
+    <style>
+        :root {
+            --black: #1a1a1a;
+            --white: #ffffff;
+            --cream: #f5f3ef;
+            --tan: #d4c4a8;
+            --text: #2c2416;
+            --muted: #6b5b4a;
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            --radius: 12px;
+            --max: 1200px;
+            --font: 'Georgia', 'Times New Roman', serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--font);
+            color: var(--text);
+            background: var(--cream);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            background: var(--white);
+            border-bottom: 1px solid var(--tan);
+            padding: 20px 0;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: var(--black);
+        }
+        .logo span {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+        .contact-header {
+            text-align: right;
+            font-size: 14px;
+            color: var(--muted);
+        }
+        .contact-header a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            margin-top: 4px;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 400;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: var(--black);
+        }
+        .hero .subtitle {
+            font-size: 20px;
+            color: var(--muted);
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+        .hero .location {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--white);
+            border: 1px solid var(--tan);
+            border-radius: var(--radius);
+            font-size: 15px;
+            color: var(--muted);
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .section-intro {
+            text-align: center;
+            color: var(--muted);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 17px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--tan);
+            border-radius: var(--radius);
+            padding: 32px;
+        }
+        .service-card h3 {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 12px;
+            color: var(--black);
+        }
+        .service-card p {
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .service-card ul {
+            margin-top: 16px;
+            padding-left: 20px;
+            color: var(--muted);
+            font-size: 15px;
+        }
+        .service-card li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background: var(--white);
+            border: 2px solid var(--tan);
+            border-radius: var(--radius);
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .highlight-box h3 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+        .highlight-box p {
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .credentials {
+            background: var(--white);
+            padding: 60px 0;
+            border-top: 1px solid var(--tan);
+            border-bottom: 1px solid var(--tan);
+        }
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+        .credential-item {
+            text-align: center;
+        }
+        .credential-item .number {
+            font-size: 48px;
+            font-weight: 400;
+            color: var(--tan);
+            line-height: 1;
+        }
+        .credential-item .label {
+            font-size: 14px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 8px;
+        }
+        .location-section {
+            background: var(--white);
+            padding: 60px 0;
+        }
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .location-info h3 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .location-info p {
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+        .location-info address {
+            font-style: normal;
+            margin: 24px 0;
+            padding: 20px;
+            background: var(--cream);
+            border-radius: var(--radius);
+        }
+        .map-placeholder {
+            background: var(--cream);
+            border: 1px solid var(--tan);
+            border-radius: var(--radius);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+        }
+        .cta-section {
+            background: var(--black);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        .cta-section p {
+            color: rgba(255,255,255,0.7);
+            max-width: 600px;
+            margin: 0 auto 32px;
+            font-size: 18px;
+        }
+        .button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: var(--white);
+            color: var(--black);
+            text-decoration: none;
+            border-radius: var(--radius);
+            font-size: 15px;
+            letter-spacing: 0.05em;
+            transition: opacity 0.2s;
+        }
+        .button:hover {
+            opacity: 0.9;
+        }
+        .button-outline {
+            background: transparent;
+            color: var(--white);
+            border: 1px solid var(--white);
+            margin-left: 16px;
+        }
+        footer {
+            background: var(--cream);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-header {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    Rare Furniture
+                    <span>Antique Restoration & Conservation</span>
+                </div>
+                <div class="contact-header">
+                    <div>7A Sulina Road, London SW2 4EJ</div>
+                    <a href="tel:+447414067703">07414 067703</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Antique Furniture Restoration<br>& Architectural Woodwork</h1>
+            <p class="subtitle">Specialist conservation of antique furniture, Grade II listed staircases, panelled rooms, and Georgian shutters. Serving London since 2010.</p>
+            <div class="location">📍 Brixton Hill, London SW2</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-intro">From single pieces of furniture to complete architectural schemes, we provide expert restoration and conservation services.</p>
+            
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Antique Furniture</h3>
+                    <p>Restoration and conservation of all periods and styles, from Georgian to Victorian, Edwardian to Art Deco.</p>
+                    <ul>
+                        <li>Structural repairs</li>
+                        <li>Surface restoration</li>
+                        <li>French polishing</li>
+                        <li>Marquetry and inlay</li>
+                        <li>Gilding and decorative finishes</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>Grade II Listed Staircases</h3>
+                    <p>Specialist conservation of historic staircases in listed buildings, respecting original craftsmanship and materials.</p>
+                    <ul>
+                        <li>Continuous handrails</li>
+                        <li>Spiral volutes</li>
+                        <li>Balustrade restoration</li>
+                        <li>Newel post repairs</li>
+                        <li>Timber consolidation</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>Architectural Woodwork</h3>
+                    <p>On-site conservation of historic interior woodwork in period properties and listed buildings.</p>
+                    <ul>
+                        <li>Panelled rooms</li>
+                        <li>Georgian shutters</li>
+                        <li>Fire surrounds</li>
+                        <li>Door and window frames</li>
+                        <li>Decorative mouldings</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>Heritage Consultancy</h3>
+                    <p>Expert advice on conservation approaches, materials, and techniques for historic woodwork.</p>
+                    <ul>
+                        <li>Condition surveys</li>
+                        <li>Conservation reports</li>
+                        <li>Specification writing</li>
+                        <li>Contractor supervision</li>
+                        <li>Insurance valuations</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Chinese Furniture Specialism</h3>
+                <p>We are also specialists in the conservation of Chinese huanghuali, zitan, and other precious hardwood furniture. Former principal consultant to Bonhams.</p>
+                <p style="margin-top: 16px;"><a href="/" style="color: var(--text);">Visit Huanghuali Conservation →</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="credentials">
+        <div class="container">
+            <h2 class="section-title">Why Choose Rare Furniture</h2>
+            <div class="credentials-grid">
+                <div class="credential-item">
+                    <div class="number">15+</div>
+                    <div class="label">Years Experience</div>
+                </div>
+                <div class="credential-item">
+                    <div class="number">Grade II</div>
+                    <div class="label">Listed Building Work</div>
+                </div>
+                <div class="credential-item">
+                    <div class="number">Bonhams</div>
+                    <div class="label">Former Principal Consultant</div>
+                </div>
+                <div class="credential-item">
+                    <div class="number">SW2</div>
+                    <div class="label">Brixton Hill Location</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-section">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-info">
+                    <h3>Visit Our Studio</h3>
+                    <p>Located in Brixton Hill, South London, our workshop is easily accessible from across the city. We welcome enquiries and can arrange consultations by appointment.</p>
+                    <address>
+                        <strong>Rare Furniture</strong><br>
+                        7A Sulina Road<br>
+                        London SW2 4EJ<br><br>
+                        <a href="tel:+447414067703" style="color: var(--text);">07414 067703</a>
+                    </address>
+                    <p><strong>Hours:</strong> Monday–Friday, 9am–5pm<br>Weekends by appointment</p>
+                </div>
+                <div class="map-placeholder">
+                    [Google Map Embed]<br>
+                    <small>7A Sulina Road, London SW2 4EJ</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Request a Consultation</h2>
+            <p>Whether you have a single piece of furniture or a complete architectural scheme, we'd be happy to discuss your project.</p>
+            <a href="tel:+447414067703" class="button">Call 07414 067703</a>
+            <a href="mailto:kirkwoodpaterson@googlemail.com" class="button button-outline">Email Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><strong>Rare Furniture</strong> — Antique Restoration & Architectural Woodwork Conservation</p>
+            <p>7A Sulina Road, London SW2 4EJ | 07414 067703</p>
+            <p style="margin-top: 16px;">Serving Brixton, Clapham, Streatham, and all London</p>
+        </div>
+    </footer>
+</body>
+</html>
